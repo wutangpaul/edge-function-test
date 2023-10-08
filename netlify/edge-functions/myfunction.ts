@@ -15,6 +15,8 @@ export default async (request: Request, context: Context) => {
     //console.log(request)
     //response.headers.set("X-Your-Custom-Header", "A custom value")
 
+    console.log("request.url: " + request.url)
+
     if (
       request.url.includes("localhost") ||
       request.url.includes("netlify.app")
